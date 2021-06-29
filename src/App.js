@@ -7,7 +7,7 @@ import Page from "./Page";
 function App() {
   return (
     <Router>
-    <div>
+    <div className="app" style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
       <Switch>
         {[1,2,3,4].map((ele)=>{
           console.log(ele);
