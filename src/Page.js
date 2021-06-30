@@ -1,4 +1,4 @@
-import {Heading,Sales,PersonalInfo} from './components'
+import {Heading,Sales,PersonalInfo,Table,Rules} from './components'
 export default function Page(props) {
     const style = {
         width:`90vw`,
@@ -17,6 +17,11 @@ export default function Page(props) {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue 
             </div>
             <PersonalInfo/>
+            <Table header={["Sr.No.","Perticular","Model","Serial No"]}/>
+            <Table header={["Accessories Details","Complaints Found"]}/>
+            <Table header={["Mature of Colplaints",'remark']}/>
+            <Table />
+            <Rules/>
         </div>
     )
 }

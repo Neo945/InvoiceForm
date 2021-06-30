@@ -1,7 +1,7 @@
 export default function Card(props) {
-    console.log(props)
+    console.log(props);
     return (
-        <div style={{width:'100px',border:"1px black solid",padding:"5px"}} className="card">
+        <div style={{width:"100%",display:"inline-block",border:"1px black solid",padding:"10px",fontWeight:(props.header? "bold":"normal")}} className="card">
             {props.value}
         </div>
     );
