@@ -24,7 +24,7 @@ function App() {
                 )
         })}
       </Switch>
-      <button onClick={Print} style={{margin:"100px"}}>
+      <button onClick={Print} style={{width:"100px",height:"50px",fontSize:"1.5em",padding:"5px",background:"blue",border:0,color:"white",borderRadius:"5px",margin:"100px"}}>
         Print
       </button>
     </div>

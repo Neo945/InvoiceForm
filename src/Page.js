@@ -10,8 +10,7 @@ export default function Page(props) {
     }
 
     return (
-        <div id="area">
-            <div style={style} className="page">
+            <div style={style} id="area" className="page">
                 <Heading />
                 <Sales />
                 <div style={{fontSize:"1EM"}}>
@@ -25,6 +24,5 @@ export default function Page(props) {
                 <Rules/>
                 <Signature />
             </div>
-        </div>
     )
 }
