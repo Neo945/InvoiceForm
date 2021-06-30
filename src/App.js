@@ -4,6 +4,13 @@ import {
   Route,
 } from "react-router-dom";
 import Page from "./Page";
+
+function Print(event) {
+    // console.log('wer')
+    event.target.style.display = "none";
+    window.print();
+    event.target.style.display = "";
+}
 function App() {
   return (
     <Router>
@@ -17,6 +24,9 @@ function App() {
                 )
         })}
       </Switch>
+      <button onClick={Print} style={{margin:"100px"}}>
+        Print
+      </button>
     </div>
   </Router>
   );
