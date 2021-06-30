@@ -1,4 +1,4 @@
-import {Heading,Sales} from './components'
+import {Heading,Sales,PersonalInfo} from './components'
 export default function Page(props) {
     const style = {
         width:`90vw`,
@@ -11,12 +11,12 @@ export default function Page(props) {
 
     return (
         <div style={style} className="page">
-        <Heading />
-        <Sales />
-        <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue 
-        </div>
-
+            <Heading />
+            <Sales />
+            <div style={{fontSize:"1.5EM"}}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue 
+            </div>
+            <PersonalInfo/>
         </div>
     )
 }
